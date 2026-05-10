@@ -147,18 +147,18 @@ def clear_text():
     global packet_count
     global graph_data
 
-    # TEXT TEMİZLE
+################### CLEAR TEXT ###################
     text.delete(1.0, tk.END)
 
-    # PACKET RESET
+################### PACKET RESET ###################
     packet_count = 0
     count_label.config(text="Packets: 0")
 
-    # TOP TALKERS RESET
+################### TOP TALKERS RESET ###################
     ip_counter.clear()
     talker_list.delete(0, tk.END)
 
-    # GRAPH RESET
+################### GRAPH RESET ###################
     graph_data.clear()
 
     ax.clear()
